@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HarvestHub connects farmers directly with buyers for fair, transparent crop trading.">
+  <title>HarvestHub | Farmer–Buyer Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="HarvestHub home">
+      <span class="brand-mark">✳</span><span>harvest<span class="brand-accent">hub</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#marketplace">Marketplace</a><a href="#how-it-works">How it works</a><a href="#about">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-ghost" id="loginBtn">Sign in</button>
+      <button class="btn btn-primary" id="listCropBtn">＋ List your crop</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A fairer way to trade fresh produce</div>
+        <h1>Good food.<br><span>Fair prices.</span><br>Stronger farms.</h1>
+        <p class="hero-copy">A direct marketplace where farmers meet buyers. Discover fresh harvests, compare prices and build better trade relationships — without unnecessary middlemen.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="#marketplace">Explore crops <span>↗</span></a>
+          <button class="btn btn-outline btn-large" id="heroListBtn">I'm a farmer</button>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><span>R</span><span>M</span><span>A</span><span>+</span></div>
+          <div><strong>Local connections, real impact</strong><small>Built to bring growers and buyers closer</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1100&q=85" alt="Green agricultural fields at sunrise">
+          <div class="photo-label"><span class="live-dot"></span> Fresh from the farm</div>
+        </div>
+        <div class="floating-card harvest-card">
+          <span class="float-icon">🌾</span><div><strong>Harvest ready</strong><small>New crops added every day</small></div>
+        </div>
+        <div class="floating-card price-card"><small>Transparent pricing</small><strong>Direct from growers</strong><span>✓ No hidden marketplace fee</span></div>
+        <div class="hero-circle"></div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Marketplace highlights">
+      <div><strong>Direct</strong><span>farmer-to-buyer trade</span></div>
+      <div><strong>Fresh</strong><span>harvest information</span></div>
+      <div><strong>Clear</strong><span>prices and quantities</span></div>
+      <div><strong>Local</strong><span>community connections</span></div>
+    </section>
+
+    <section class="market-section section-wrap" id="marketplace">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE MARKETPLACE</div><h2>Find your next <span>fresh pick.</span></h2><p>Explore crops listed directly by farmers and connect with the people who grow your food.</p></div>
+        <button class="btn btn-primary" id="marketListBtn">＋ Add a listing</button>
+      </div>
+      <div class="filter-bar">
+        <label class="search-box"><span>⌕</span><input type="search" id="searchInput" placeholder="Search crops, farmers or locations..." aria-label="Search listings"></label>
+        <select id="categoryFilter" aria-label="Filter by category"><option value="all">All categories</option><option>Vegetables</option><option>Fruits</option><option>Grains</option><option>Pulses</option><option>Other</option></select>
+        <select id="sortFilter" aria-label="Sort listings"><option value="recent">Recently added</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
+      </div>
+      <div class="results-line"><span id="resultCount">Showing available crops</span><span class="verified-note">✓ Farmer-listed information</span></div>
+      <div class="crop-grid" id="cropGrid"></div>
+      <div class="empty-state hidden" id="emptyState"><div>🌱</div><h3>No crops found</h3><p>Try another search or clear your filters.</p><button class="btn btn-outline" id="clearFilters">Clear filters</button></div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="section-wrap">
+        <div class="center-heading"><div class="eyebrow">SIMPLE BY DESIGN</div><h2>From field to <span>fair deal.</span></h2><p>Three simple steps bring farmers and buyers together.</p></div>
+        <div class="steps-grid">
+          <article class="step-card"><div class="step-number">01</div><div class="step-icon">🌱</div><h3>Farmers list harvests</h3><p>Add crop details, available quantity, expected harvest date, location and your asking price.</p></article>
+          <article class="step-card"><div class="step-number">02</div><div class="step-icon">🔎</div><h3>Buyers discover crops</h3><p>Search by crop, category or location. Compare listings and review the information provided.</p></article>
+          <article class="step-card"><div class="step-number">03</div><div class="step-icon">🤝</div><h3>Connect and agree</h3><p>Send an enquiry to the farmer and discuss quantity, delivery, quality and final terms directly.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-section section-wrap" id="about">
+      <div class="impact-image"><img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0b4f6b?auto=format&fit=crop&w=1000&q=85" alt="Farmer working in a green crop field"></div>
+      <div class="impact-copy"><div class="eyebrow">OUR PURPOSE</div><h2>Better connections make a <span>stronger food system.</span></h2><p>HarvestHub is a student project concept designed to make crop information easier to discover and direct farmer–buyer communication more accessible.</p><ul><li>✓ More visibility for local farmers</li><li>✓ Easier crop discovery for buyers</li><li>✓ Clear listing details and asking prices</li></ul><button class="btn btn-primary" id="impactListBtn">Join the marketplace ↗</button></div>
+    </section>
+
+    <section class="cta-section"><div><div class="eyebrow light-eyebrow">GROW TOGETHER</div><h2>Your harvest deserves<br>a wider market.</h2><p>List your crops and let interested buyers find you.</p><button class="btn btn-light" id="ctaListBtn">List a crop today ↗</button></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#"><span class="brand-mark">✳</span><span>harvest<span class="brand-accent">hub</span></span></a><p>Connecting growers and buyers, one harvest at a time.</p><span>© 2026 HarvestHub · Student project demo</span></footer>
+
+  <!-- Listing modal -->
+  <div class="modal-backdrop hidden" id="listingModal" role="dialog" aria-modal="true" aria-labelledby="listingTitle">
+    <div class="modal">
+      <button class="modal-close" data-close="listingModal" aria-label="Close">×</button>
+      <div class="eyebrow">FARMER PORTAL</div><h2 id="listingTitle">List your <span>harvest.</span></h2><p class="modal-intro">Share your crop details so buyers can discover your produce.</p>
+      <form id="listingForm">
+        <div class="form-grid">
+          <label>Farmer name<input name="farmer" required maxlength="50" placeholder="Your name"></label>
+          <label>Crop name<input name="crop" required maxlength="50" placeholder="e.g. Tomato"></label>
+          <label>Category<select name="category" required><option value="">Choose category</option><option>Vegetables</option><option>Fruits</option><option>Grains</option><option>Pulses</option><option>Other</option></select></label>
+          <label>Quantity (kg)<input name="quantity" type="number" min="1" required placeholder="e.g. 500"></label>
+          <label>Price per kg (₹)<input name="price" type="number" min="1" step="0.5" required placeholder="e.g. 25"></label>
+          <label>Location<input name="location" required maxlength="60" placeholder="Village, District"></label>
+          <label>Expected harvest date<input name="harvest" type="date" required></label>
+          <label>Contact number<input name="phone" type="tel" pattern="[0-9+\-\s]{8,15}" required placeholder="Phone number"></label>
+        </div>
+        <label class="full-label">Short description<textarea name="description" rows="3" maxlength="240" placeholder="Quality, variety or other useful details..."></textarea></label>
+        <button class="btn btn-primary btn-full" type="submit">Publish crop listing ↗</button>
+        <small class="form-hint">Demo only: listings are saved in this browser using local storage.</small>
+      </form>
+    </div>
+  </div>
+
+  <!-- Buyer enquiry modal -->
+  <div class="modal-backdrop hidden" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="enquiryTitle">
+    <div class="modal modal-small">
+      <button class="modal-close" data-close="enquiryModal" aria-label="Close">×</button>
+      <div class="eyebrow">BUYER ENQUIRY</div><h2 id="enquiryTitle">Interested in this <span>crop?</span></h2>
+      <div id="enquiryCropInfo" class="enquiry-crop-info"></div>
+      <form id="enquiryForm">
+        <input type="hidden" name="listingId">
+        <label>Your name<input name="buyer" required placeholder="Buyer name"></label>
+        <label>Quantity required (kg)<input name="quantity" type="number" min="1" required placeholder="e.g. 100"></label>
+        <label>Message<textarea name="message" rows="3" placeholder="Tell the farmer what you need..."></textarea></label>
+        <button class="btn btn-primary btn-full" type="submit">Prepare enquiry</button>
+        <small class="form-hint">This demo prepares a message; it does not send it to a server.</small>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
